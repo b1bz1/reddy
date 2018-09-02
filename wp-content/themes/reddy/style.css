@@ -1,1 +1,1 @@
-body{background-color:blue}
+body,html{font-family:"Source Code Pro", monospace}body{min-height:100vh;position:relative}body{background-color:blue}nav{width:100%;position:absolute;bottom:0}h1,h2,h3,h4,p,a,span{font-family:"Source Code Pro", monospace}
