@@ -9,6 +9,7 @@ $brand-light-blue: #E1E1F2;
 $black: #2d2d2d;
 $med-grey: #dddddd;
 $light-grey: #ededed;
+$white: #ffffff;
 
 //Font weights
 $extra-light: 200;
@@ -19,3 +20,9 @@ $semi-bold: 600;
 $bold: 700;
 $extra-bold: 800;
 $black: 900;
+
+// For fluid typography
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 24px;

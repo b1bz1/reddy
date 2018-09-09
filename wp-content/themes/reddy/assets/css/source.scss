@@ -1,9 +1,14 @@
+// Abstracts
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// Components
+@import "components/buttons";
+
 // Layot
 @import "layout/global";
 @import "layout/nav";
 
 // Theme
 @import "theme/typography";
-
-// Abstracts
-@import "abstracts/variables";
+@import "theme/colours";

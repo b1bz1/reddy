@@ -13,6 +13,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
+		<!-- Hamburger CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.3/hamburgers.min.css" rel="stylesheet">
+
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900" rel="stylesheet">
 
@@ -36,15 +39,17 @@
 
 	</head>
 	<body <?php body_class(); ?>>
+		<div class="nav-wrapper">
+			<!-- navbar -->
+			<nav class="main-nav navbar-expand-lg fixed-top">
+				<a class="navbar-brand" href="#">Reddy</a>
+				<button class="navbar-toggler hamburger hamburger--squeeze" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
 
-		<!-- navbar -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Reddy</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-				<?php wp_nav_menu(); ?>
-			</div>
-		</nav>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<?php wp_nav_menu(); ?>
+				</div>
+			</nav>

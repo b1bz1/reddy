@@ -1,8 +1,35 @@
 body, html {
     font-family: "Source Code Pro", monospace;
+    font-weight: 500;
 }
 
-body {
-    min-height: 100vh;
-    position: relative;
+section {
+    padding: 60px 0;
+
+    h1, h2, h3, h4 {
+        margin: 0 0 35px 0;
+
+        @media (min-width: 992px) {
+            margin: 0 0
+        }
+    }
+
+    &.hero {
+        padding: 115px 0 60px 0;
+        background-color: $brand-green;
+
+        .heading {
+            @include fluid-type(320px, 1200px, 30px, 42px);
+            color: $brand-dark-blue-2;
+
+            &:first-of-type:not(:last-of-type) {
+                margin: 0 0;
+            }
+        }
+
+        p {
+            @include fluid-type(320px, 1200px, 18px, 20px);
+            color: #3e4c3f;
+        }
+    }
 }
